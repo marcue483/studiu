@@ -1,0 +1,142 @@
+.form{
+    background-image: url(./img/supportbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    color: black;
+    padding: 60px 0 60px 60px;
+}
+
+.formq {
+    padding-block: 5px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.forma {
+    font-size: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.format {
+    font-size: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 200px;
+    resize: none;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px auto 0 0;
+    font-size: 15px;
+}
+
+.checkbox {
+    margin: 0 5px 0 0;
+}
+
+.submitbutton {
+    background-color: rgba(156, 65, 225);
+    color: white;
+    border-color: rgb(0, 100, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    padding: 5px 50px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .15s;
+    vertical-align: center;
+}
+
+.submitbutton:hover {
+    background-color: rgb(139, 59, 200);
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    margin: 100px 100px 60px 100px;
+    font-size: 19px;
+}
+
+.faqq {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+}
+
+ul {
+    list-style: none;
+    font-weight: 600;
+    padding: 0;
+}
+
+li {
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.maps {
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+@media (max-width: 1400px) {
+    .maps{
+        width: 350px;
+    }
+
+    form{
+        max-width: 70%;
+        padding: 60px 0 60px 0;
+    }
+
+    .form{
+        background-color: white;
+        background-image: none;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1050px) {
+    .info{
+        flex-direction: column;
+    }
+    .maps{
+        width: 80%;
+    }
+    .josu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        gap: 45%;
+    }
+    .info{
+        gap: 60px;
+    }
+}

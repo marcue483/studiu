@@ -1,0 +1,131 @@
+body{
+    margin: 70px auto auto auto;
+    background-color: #101010;
+    font-family: Rubik;
+    color: #ffffff;
+    max-width: 1600px;
+}
+
+nav{
+    background-color: #202020;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    inset: 0 0 auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.left .mid .right{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.mid{
+    margin-right: 200px;
+}
+
+.right{
+    margin-right: 10px;
+}
+
+.burgir{
+    display: none;
+}
+
+.navlinks{
+    text-decoration: none;
+    color: white;
+    padding-inline: 50px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.rightimg{
+    height: 25px;
+    width: 25px;
+    padding-inline: 10px;
+}
+
+.products{
+    position: fixed;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 100px;
+    background-color: #202020;
+    inset: 80px 35% auto auto;
+    border-radius: 20px;
+    padding: 20px 30px;
+}
+
+.item{
+    cursor: pointer;
+}
+
+hr{
+    border: #ee82ee 2px solid;
+    margin-inline: 60px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 60px;
+}
+
+.footright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.terms {
+    text-decoration: none;
+    color: #9a40e1;
+}
+
+@media (max-width: 1260px) {
+    .footlogo, .navlogo{
+        width: 200px;
+    }
+
+    nav{
+        height: 37px;
+    }
+
+    .rightimg{
+        height: 20px;
+        width: 20px;
+        padding-inline: 5px;
+    }
+
+    body{
+        margin: 37px auto auto auto;
+    }
+
+    .navlinks{
+        font-size: small;
+    }
+    .mid{
+        display: none;
+    }
+    .burgir{
+        display: unset;
+    }
+    footer{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .footlogo{
+        width: 60%;
+        min-width: 200px;
+    }
+}

@@ -1,0 +1,51 @@
+.patrat-logare{
+    height: 550px;
+    width: 30%;
+    background-color: #202020;
+    margin: 130px auto 60px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+}
+
+.usersvg{
+    width: 25%;
+    margin: 50px auto 40px auto;
+}
+
+.logelements{
+    margin-inline: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+input{
+    margin-bottom: 35px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.logbutton{
+    background-color: rgba(156, 65, 225);
+    color: white;
+    border-color: rgb(0, 100, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 4px 40px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    vertical-align: center;
+    margin-inline: auto;
+    width: 40%;
+}
+
+@media (max-width: 1350px) {
+    .logbutton, .logelements{
+        font-size: 15px;
+    }
+}
